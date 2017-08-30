@@ -74,29 +74,11 @@ class ViewController: UIViewController ,UIScrollViewDelegate{
     /// - Parameter count: 子控制器的个数
     func addChildVc(count:Int)  {
 
-        
-        let topVc = TopViewController()
-        let shehuiVc = ShehuiViewController()
-        let guoneiVc = GuoneiViewController()
-        let guojiVc =  GuojiViewController()
-        let yuleVc = YuleViewController()
-        let tiyuVc = TiyuViewController()
-        let junshiVc = JunshiViewController()
-        let kejiVc = KejiViewController()
-        let caijingVc = CaijingViewController()
-        let shishangVc = ShishangViewController()
-        
-        self.addChildViewController(topVc)
-        self.addChildViewController(shehuiVc)
-        self.addChildViewController(guoneiVc)
-        self.addChildViewController(guojiVc)
-        self.addChildViewController(yuleVc)
-        self.addChildViewController(tiyuVc)
-        self.addChildViewController(junshiVc)
-        self.addChildViewController(kejiVc)
-        self.addChildViewController(caijingVc)
-        self.addChildViewController(shishangVc)
-        
+        for var index in 0 ..< count{
+            let vc = BaseViewController()
+            vc.newsType = contentFileArr?[index]["EN"]
+            self.addChildViewController(vc)
+        }
     }
     
     /// 添加滚动视图的按钮

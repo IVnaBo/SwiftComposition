@@ -23,16 +23,6 @@
 		9EFDBCCB1F53B575007AD157 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCCA1F53B575007AD157 /* Const.swift */; };
 		9EFDBCD81F53C70D007AD157 /* TitleList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EFDBCD71F53C70D007AD157 /* TitleList.plist */; };
 		9EFDBCDB1F540E48007AD157 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCDA1F540E48007AD157 /* BaseViewController.swift */; };
-		9EFDBCDD1F540E6F007AD157 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCDC1F540E6F007AD157 /* TopViewController.swift */; };
-		9EFDBCDF1F541108007AD157 /* ShehuiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCDE1F541108007AD157 /* ShehuiViewController.swift */; };
-		9EFDBCE11F541117007AD157 /* GuoneiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCE01F541117007AD157 /* GuoneiViewController.swift */; };
-		9EFDBCE31F541121007AD157 /* GuojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCE21F541121007AD157 /* GuojiViewController.swift */; };
-		9EFDBCE51F541129007AD157 /* YuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCE41F541129007AD157 /* YuleViewController.swift */; };
-		9EFDBCE71F541130007AD157 /* TiyuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCE61F541130007AD157 /* TiyuViewController.swift */; };
-		9EFDBCE91F54113C007AD157 /* JunshiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCE81F54113C007AD157 /* JunshiViewController.swift */; };
-		9EFDBCEB1F541143007AD157 /* KejiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCEA1F541143007AD157 /* KejiViewController.swift */; };
-		9EFDBCED1F54114F007AD157 /* CaijingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCEC1F54114F007AD157 /* CaijingViewController.swift */; };
-		9EFDBCEF1F541158007AD157 /* ShishangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCEE1F541158007AD157 /* ShishangViewController.swift */; };
 		9EFDBCF11F541C21007AD157 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCF01F541C21007AD157 /* NetworkTool.swift */; };
 		9EFDBCF31F541DB7007AD157 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBCF21F541DB7007AD157 /* NewsModel.swift */; };
 /* End PBXBuildFile section */
@@ -79,16 +69,6 @@
 		9EFDBCD61F53BD3D007AD157 /* CompositionBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompositionBridge.h; sourceTree = "<group>"; };
 		9EFDBCD71F53C70D007AD157 /* TitleList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TitleList.plist; sourceTree = "<group>"; };
 		9EFDBCDA1F540E48007AD157 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		9EFDBCDC1F540E6F007AD157 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
-		9EFDBCDE1F541108007AD157 /* ShehuiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShehuiViewController.swift; sourceTree = "<group>"; };
-		9EFDBCE01F541117007AD157 /* GuoneiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuoneiViewController.swift; sourceTree = "<group>"; };
-		9EFDBCE21F541121007AD157 /* GuojiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuojiViewController.swift; sourceTree = "<group>"; };
-		9EFDBCE41F541129007AD157 /* YuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuleViewController.swift; sourceTree = "<group>"; };
-		9EFDBCE61F541130007AD157 /* TiyuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiyuViewController.swift; sourceTree = "<group>"; };
-		9EFDBCE81F54113C007AD157 /* JunshiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JunshiViewController.swift; sourceTree = "<group>"; };
-		9EFDBCEA1F541143007AD157 /* KejiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KejiViewController.swift; sourceTree = "<group>"; };
-		9EFDBCEC1F54114F007AD157 /* CaijingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaijingViewController.swift; sourceTree = "<group>"; };
-		9EFDBCEE1F541158007AD157 /* ShishangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShishangViewController.swift; sourceTree = "<group>"; };
 		9EFDBCF01F541C21007AD157 /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		9EFDBCF21F541DB7007AD157 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		A0D4ACF08F833D5B49841A4C /* Pods-SwiftComposition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftComposition.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftComposition/Pods-SwiftComposition.release.xcconfig"; sourceTree = "<group>"; };
@@ -213,16 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				9EFDBCDA1F540E48007AD157 /* BaseViewController.swift */,
-				9EFDBCDC1F540E6F007AD157 /* TopViewController.swift */,
-				9EFDBCDE1F541108007AD157 /* ShehuiViewController.swift */,
-				9EFDBCE01F541117007AD157 /* GuoneiViewController.swift */,
-				9EFDBCE21F541121007AD157 /* GuojiViewController.swift */,
-				9EFDBCE41F541129007AD157 /* YuleViewController.swift */,
-				9EFDBCE61F541130007AD157 /* TiyuViewController.swift */,
-				9EFDBCE81F54113C007AD157 /* JunshiViewController.swift */,
-				9EFDBCEA1F541143007AD157 /* KejiViewController.swift */,
-				9EFDBCEC1F54114F007AD157 /* CaijingViewController.swift */,
-				9EFDBCEE1F541158007AD157 /* ShishangViewController.swift */,
 			);
 			path = FYLPageVC;
 			sourceTree = "<group>";
@@ -419,24 +389,14 @@
 				9EB259661F5641D0007DF772 /* ImagePreviewVC.swift in Sources */,
 				9EFDBC9F1F53B32E007AD157 /* ViewController.swift in Sources */,
 				9E14874C1F5569B2002CED35 /* DateExtensions.swift in Sources */,
-				9EFDBCEB1F541143007AD157 /* KejiViewController.swift in Sources */,
 				9E14870A1F54F755002CED35 /* NewsViewCell.swift in Sources */,
-				9EFDBCE31F541121007AD157 /* GuojiViewController.swift in Sources */,
 				9EFDBCDB1F540E48007AD157 /* BaseViewController.swift in Sources */,
 				9EFDBCF11F541C21007AD157 /* NetworkTool.swift in Sources */,
-				9EFDBCE91F54113C007AD157 /* JunshiViewController.swift in Sources */,
-				9EFDBCEF1F541158007AD157 /* ShishangViewController.swift in Sources */,
 				9E14870E1F551117002CED35 /* Tool.swift in Sources */,
 				9EB259651F5641D0007DF772 /* ImagePreviewCell.swift in Sources */,
-				9EFDBCE51F541129007AD157 /* YuleViewController.swift in Sources */,
 				9EFDBCF31F541DB7007AD157 /* NewsModel.swift in Sources */,
-				9EFDBCDF1F541108007AD157 /* ShehuiViewController.swift in Sources */,
-				9EFDBCE11F541117007AD157 /* GuoneiViewController.swift in Sources */,
 				9EFDBC9D1F53B32E007AD157 /* AppDelegate.swift in Sources */,
-				9EFDBCE71F541130007AD157 /* TiyuViewController.swift in Sources */,
-				9EFDBCED1F54114F007AD157 /* CaijingViewController.swift in Sources */,
 				9EFDBCCB1F53B575007AD157 /* Const.swift in Sources */,
-				9EFDBCDD1F540E6F007AD157 /* TopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

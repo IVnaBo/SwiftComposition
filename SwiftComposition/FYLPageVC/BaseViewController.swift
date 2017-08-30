@@ -10,15 +10,13 @@ import UIKit
 
 class BaseViewController: UITableViewController,NewsViewCellDelegate {
     var newsModel:[NewsModel]?
-    func type() ->String {
-      return ""
-    }
-    
+    var newsType:String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         ///初始化数组
         newsModel = [NewsModel]()
-        print("标志符为" + type())
+        print("标志符为" + newsType!)
         
         setupUI()
         
@@ -34,13 +32,13 @@ class BaseViewController: UITableViewController,NewsViewCellDelegate {
     func setupUI() {
         
         self.tableView.separatorStyle = .none
-        self.tableView.register(NewsViewCell.classForCoder(), forCellReuseIdentifier: type())
+        self.tableView.register(NewsViewCell.classForCoder(), forCellReuseIdentifier: newsType!)
         
         
     }
     /// 请求数据
     func setData()  {
-        NetworkTool.shareInstance.loadNewsData(type: type()) { (models) in
+        NetworkTool.shareInstance.loadNewsData(type: newsType!) { (models) in
             
             self.newsModel = models
             
@@ -52,7 +50,7 @@ class BaseViewController: UITableViewController,NewsViewCellDelegate {
         return (self.newsModel?.count)!
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let  cell = tableView.dequeueReusableCell(withIdentifier: type(), for: indexPath) as! NewsViewCell
+        let  cell = tableView.dequeueReusableCell(withIdentifier: newsType!, for: indexPath) as! NewsViewCell
         cell.selectionStyle = .none
         while cell.middleView?.subviews.last != nil {//删除重用的cell的所有子视图
             cell.middleView?.subviews.last?.removeFromSuperview()
