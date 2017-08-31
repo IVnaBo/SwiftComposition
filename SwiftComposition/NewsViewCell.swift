@@ -58,6 +58,7 @@ class NewsViewCell: UITableViewCell {
         contentLab = UILabel.init()
         contentLab?.font = UIFont.systemFont(ofSize: 15.0)
         contentLab?.numberOfLines = 3
+        contentLab?.text = "测试"
        
         self.contentView.addSubview(contentLab!)
         
@@ -106,6 +107,77 @@ class NewsViewCell: UITableViewCell {
             make.height.equalTo(25)
         })
     }
+    
+    var testModel:TestModel?{
+        didSet{
+            if (testModel?.dataArr?.count)! > 0 {//如果图片存在 ，添加图片视图
+                //                make.height.equalTo((iPhone_W - kMargin * 2 - 12) / 3 * 3)
+                //图片宽高比 4  :  3
+                for index in 0 ..< testModel!.dataArr!.count{
+                    
+                    let imgV = UIImageView.init()
+                    
+                    switch testModel!.dataArr!.count {
+                    case 1: imgV.frame = CGRect.init(x: 0, y: 0, width: img1Width, height: img1Height)
+                    case 2: imgV.frame = CGRect.init(x: (img2Width + imgSpace) * CGFloat(index) + imgSpace, y: 0, width: img2Width, height: img2Height)
+                    default:imgV.frame = CGRect.init(x: (imgSpace + imgWidth) * CGFloat((index) % 3) + imgSpace, y:  imgSpace * CGFloat(index / 3 + 1) + (imgWidth * 4 / 3) *  CGFloat( index / 3), width: imgWidth, height: imgWidth * 4 / 3 )
+                        
+                    }
+                    //                    imgV.kf.setImage(with: URL.init(string: (testModel?.dataArr?[index])!))
+                    imgV.image = UIImage.init(named: (testModel?.dataArr?[index])!)
+                    imgV.tag = 10 + index
+                    let tap = UITapGestureRecognizer.init(target: self, action: #selector(imgTapAction))
+                    //打开用户交互
+                    imgV.isUserInteractionEnabled = true
+                    imgV.addGestureRecognizer(tap)
+                    
+                    self.middleView? .addSubview(imgV)
+                }
+                if (testModel?.dataArr?.count)! > 0 {
+                    
+                    if testModel?.dataArr?.count == 1 {
+                        middleView?.snp.remakeConstraints({ (make) in
+                            make.left.equalTo(self.contentView).offset(10)
+                            make.right.equalTo(self.contentView).offset(-10)
+                            make.top.equalTo((contentLab?.snp.bottom)!).offset(5)
+                            //
+                            make.height.equalTo(img1Height)
+                        })
+                    }else if(testModel?.dataArr?.count == 2 ){
+                        middleView?.snp.remakeConstraints({ (make) in
+                            make.left.equalTo(self.contentView).offset(10)
+                            make.right.equalTo(self.contentView).offset(-10)
+                            make.top.equalTo((contentLab?.snp.bottom)!).offset(5)
+                            //
+                            make.height.equalTo(img2Height)
+                        })
+                    }else{
+                        if testModel?.dataArr?.count == 7 {
+                            //                            7 8 9
+                            middleView?.snp.remakeConstraints({ (make) in
+                                make.left.equalTo(self.contentView).offset(10)
+                                make.right.equalTo(self.contentView).offset(-10)
+                                make.top.equalTo((contentLab?.snp.bottom)!).offset(5)
+                                //
+                                make.height.equalTo((imgSpace + imgWidth * 4 / 3) * CGFloat(((testModel?.dataArr?.count)! / 4  + 2)))
+                            })
+                        }else{
+                            middleView?.snp.remakeConstraints({ (make) in
+                                make.left.equalTo(self.contentView).offset(10)
+                                make.right.equalTo(self.contentView).offset(-10)
+                                make.top.equalTo((contentLab?.snp.bottom)!).offset(5)
+                                //
+                                make.height.equalTo((imgSpace + imgWidth * 4 / 3) * CGFloat(((testModel?.dataArr?.count)! / 4  + 1)))
+                            })
+                        }
+                    }
+                }
+                
+                self.contentView.layoutIfNeeded()
+            }
+        }
+    }
+
    
     var newsModel:NewsModel?{
 //        set方法 赋值

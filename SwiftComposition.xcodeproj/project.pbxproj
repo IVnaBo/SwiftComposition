@@ -11,6 +11,9 @@
 		9E14870A1F54F755002CED35 /* NewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1487091F54F755002CED35 /* NewsViewCell.swift */; };
 		9E14870E1F551117002CED35 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E14870D1F551117002CED35 /* Tool.swift */; };
 		9E14874C1F5569B2002CED35 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E14874B1F5569B2002CED35 /* DateExtensions.swift */; };
+		9E4308211F57AE9800978DF4 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4308201F57AE9800978DF4 /* TestModel.swift */; };
+		9E4308231F57AEB000978DF4 /* ImgCount.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E4308221F57AEB000978DF4 /* ImgCount.plist */; };
+		9E4308251F57AEB900978DF4 /* DetailVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4308241F57AEB900978DF4 /* DetailVc.swift */; };
 		9EB259651F5641D0007DF772 /* ImagePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB259631F5641D0007DF772 /* ImagePreviewCell.swift */; };
 		9EB259661F5641D0007DF772 /* ImagePreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB259641F5641D0007DF772 /* ImagePreviewVC.swift */; };
 		9EFDBC9D1F53B32E007AD157 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFDBC9C1F53B32E007AD157 /* AppDelegate.swift */; };
@@ -50,6 +53,9 @@
 		9E1487091F54F755002CED35 /* NewsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewCell.swift; sourceTree = "<group>"; };
 		9E14870D1F551117002CED35 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		9E14874B1F5569B2002CED35 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		9E4308201F57AE9800978DF4 /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		9E4308221F57AEB000978DF4 /* ImgCount.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImgCount.plist; sourceTree = "<group>"; };
+		9E4308241F57AEB900978DF4 /* DetailVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVc.swift; sourceTree = "<group>"; };
 		9EB259631F5641D0007DF772 /* ImagePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewCell.swift; sourceTree = "<group>"; };
 		9EB259641F5641D0007DF772 /* ImagePreviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewVC.swift; sourceTree = "<group>"; };
 		9EFDBC991F53B32E007AD157 /* SwiftComposition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftComposition.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +163,8 @@
 				9EFDBC9E1F53B32E007AD157 /* ViewController.swift */,
 				9EFDBCF01F541C21007AD157 /* NetworkTool.swift */,
 				9EFDBCF21F541DB7007AD157 /* NewsModel.swift */,
+				9E4308201F57AE9800978DF4 /* TestModel.swift */,
+				9E4308221F57AEB000978DF4 /* ImgCount.plist */,
 				9E1487091F54F755002CED35 /* NewsViewCell.swift */,
 				9EFDBCA01F53B32E007AD157 /* Main.storyboard */,
 				9EFDBCA31F53B32E007AD157 /* Assets.xcassets */,
@@ -193,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				9EFDBCDA1F540E48007AD157 /* BaseViewController.swift */,
+				9E4308241F57AEB900978DF4 /* DetailVc.swift */,
 			);
 			path = FYLPageVC;
 			sourceTree = "<group>";
@@ -310,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4308231F57AEB000978DF4 /* ImgCount.plist in Resources */,
 				9EFDBCA71F53B32E007AD157 /* LaunchScreen.storyboard in Resources */,
 				9EFDBCA41F53B32E007AD157 /* Assets.xcassets in Resources */,
 				9EFDBCA21F53B32E007AD157 /* Main.storyboard in Resources */,
@@ -389,6 +399,8 @@
 				9EB259661F5641D0007DF772 /* ImagePreviewVC.swift in Sources */,
 				9EFDBC9F1F53B32E007AD157 /* ViewController.swift in Sources */,
 				9E14874C1F5569B2002CED35 /* DateExtensions.swift in Sources */,
+				9E4308211F57AE9800978DF4 /* TestModel.swift in Sources */,
+				9E4308251F57AEB900978DF4 /* DetailVc.swift in Sources */,
 				9E14870A1F54F755002CED35 /* NewsViewCell.swift in Sources */,
 				9EFDBCDB1F540E48007AD157 /* BaseViewController.swift in Sources */,
 				9EFDBCF11F541C21007AD157 /* NetworkTool.swift in Sources */,
